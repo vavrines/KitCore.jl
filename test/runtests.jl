@@ -1,5 +1,4 @@
 using Test, KitCore
-using KitCore.SpecialFunctions
 
 cd(@__DIR__)
 include("test_data.jl")
