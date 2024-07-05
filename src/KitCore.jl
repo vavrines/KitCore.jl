@@ -9,15 +9,21 @@ module KitCore
 const KC = KitCore
 
 import NonlinearSolve
-import Roots: Order1, find_zero
-import SciMLNLSolve: NLSolveJL
+
 using CUDA
 using DocStringExtensions
 using FFTW
 using LinearAlgebra
+using MultivariatePolynomials
 using OffsetArrays
-using Parameters
+using Optim
 using SpecialFunctions
+
+using FastGaussQuadrature: gausslegendre
+using Parameters: @with_kw
+using Roots: Order1, find_zero
+using SciMLNLSolve: NLSolveJL
+using TypedPolynomials: Variable, @polyvar
 
 include("Data/data.jl")
 include("Macro/macro.jl")

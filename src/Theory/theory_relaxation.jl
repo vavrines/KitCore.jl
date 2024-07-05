@@ -86,7 +86,7 @@ function νshakhov_relaxation_time(τ::T, u, prim::AV)::T where {T}
     return @. 1 / 0.0871 * τ / (νeq0(c) + 2 * νeq0(eps()))
 end
 
-νeq0(x) = 1.5 * (exp(-x^2) + sqrt(pi) / 2 * (1 / x + 2 * x) * erf(x))
+νeq0(x) = 1.5 * (exp(-x^2) + sqrt(pi) / 2 * (1 / x + 2 * x) * SpecialFunctions.erf(x))
 
 # ------------------------------------------------------------
 # AAP model

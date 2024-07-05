@@ -60,3 +60,15 @@ end
 end
 
 KC.c_closed(0, 0, 0.1)
+KC.c_closed(0, 1, 0.1)
+KC.c_closed(0, 2, 0.1)
+KC.Q(0, 0.1, 0; n_terms = 4)
+KC.c_crandall(0, 0, 0)
+KC.b_crandall(0, 0, 0)
+KC.f_crandall(0, 0)
+KC.harmonic(1)
+KC.harmonic(0, 1.0)
+KC.harmonic(1, 1.0)
+KC.harmonic(2, 3.0)
+KC.harmonic(2, 3)
+KC.stieltjes(2)
