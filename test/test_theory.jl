@@ -315,8 +315,26 @@ KitCore.reduce_distribution(
     ones(24, 24),
     1,
 )
-KitCore.full_distribution(M, M, randn(length(ω)), ω, ones(51, 24, 24), ones(51, 24, 24), 1.0, 3.0)
-KitCore.full_distribution(M, M, randn(length(ω)), ω, ones(51, 24, 24), ones(51, 24, 24), prim, 3.0)
+KitCore.full_distribution(
+    M,
+    M,
+    randn(length(ω)),
+    ω,
+    ones(51, 24, 24),
+    ones(51, 24, 24),
+    1.0,
+    3.0,
+)
+KitCore.full_distribution(
+    M,
+    M,
+    randn(length(ω)),
+    ω,
+    ones(51, 24, 24),
+    ones(51, 24, 24),
+    prim,
+    3.0,
+)
 
 KitCore.ref_vhs_vis(1.0, 1.0, 0.5)
 KitCore.vhs_collision_time(prim, 1e-3, 0.81)

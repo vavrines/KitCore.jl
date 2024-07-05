@@ -1,12 +1,13 @@
-using KitCore.OffsetArrays
+KC.extract_last(rand(2, 2), 1; mode = :view)
+KC.extract_last(rand(2, 2, 2), 1; mode = :view)
+KC.extract_last(rand(2, 2, 2, 2), 1; mode = :view)
+KC.extract_last(rand(2, 2, 2, 2, 2), 1; mode = :view)
+KC.extract_last(rand(2, 2), 1; mode = :copy)
+KC.extract_last(rand(2, 2, 2), 1; mode = :copy)
+KC.extract_last(rand(2, 2, 2, 2), 1; mode = :copy)
+KC.extract_last(rand(2, 2, 2, 2, 2), 1; mode = :copy)
 
-#KitCore.static_array(zeros(0:2))
-#KitCore.static_array(zeros(0:2, 0:1))
-#KitCore.static_array(zeros(0:2, 0:1, 0:1))
-#KitCore.static_array(zeros(0:2, 0:1, 0:1, 0:1))
-#KitCore.collect_run(`ls`)
-#KitCore.generate_vars(Dict(:a => 1))
-
+#=
 KC.AV
 KC.AM
 KC.AA
@@ -37,3 +38,4 @@ KC.ω_Ne
 KC.ω_Ar
 KC.ω_Kr
 KC.ω_Xe
+=#
