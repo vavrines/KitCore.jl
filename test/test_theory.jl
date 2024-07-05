@@ -3,6 +3,13 @@ KC.moment_basis([1.0], 2)
 KC.moment_basis([1.0], [1.0], 2)
 KC.moment_basis([1.0], [1.0], [1.0], 2)
 
+using KitCore.Distributions
+pdf = Normal(0, 0.01)
+prim = [1.0, 0.0, 0.8]
+sample_pdf(m, 4, prim, pdf)
+sample_pdf(mm, 4, [1, 0, 0, 1], pdf)
+sample_pdf(mmm, 4, [1, 0, 0, 0, 1], pdf)
+
 quadratureorder = 2
 points, weights = KC.octa_quadrature(quadratureorder)
 nq = size(points, 1)

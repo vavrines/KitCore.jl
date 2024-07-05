@@ -11,6 +11,7 @@ const KC = KitCore
 import NonlinearSolve
 
 using CUDA
+using Distributions
 using DocStringExtensions
 using FFTW
 using LinearAlgebra
