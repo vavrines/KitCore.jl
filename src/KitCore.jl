@@ -11,19 +11,13 @@ const KC = KitCore
 import NonlinearSolve
 import Roots: Order1, find_zero
 import SciMLNLSolve: NLSolveJL
-using Base.Threads: @threads
 using CUDA
-#using Distributions
 using DocStringExtensions
-#using FastGaussQuadrature
 using FFTW
 using LinearAlgebra
-#using MultivariatePolynomials
 using OffsetArrays
-#using Optim
 using Parameters
 using SpecialFunctions
-#using StaticArrays
 
 include("Data/data.jl")
 include("Macro/macro.jl")
